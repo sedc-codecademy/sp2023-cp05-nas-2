@@ -1,0 +1,38 @@
+footer {
+    background-color: black;
+    padding: 50px 0;
+    color: #1DD3B0;
+    width: 100%;
+    
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: #1DD3B0;
+    text-decoration: none;
+  }
+
+  .copyright {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #1DD3B0;
+}

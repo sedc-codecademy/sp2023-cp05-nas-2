@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  }
+  .first-page-register {
+    display :grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .header1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color:#1DD3B0;
+    background-color: black;
+  }
+  .header1 h1{
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 5rem;
+  }
+  #register-button {
+    font-size: 2rem;
+    padding: 3% auto;
+    color: black;
+    background-color: #1DD3B0;
+  
+  }
+  #register-button:hover {
+    background-color :#FF9E00;
+    transition: 0.3s;
+  }
+  .hidden {
+    display: none;
+  }
+  #register-form-container {
+    justify-items: center;
+    align-items: center;
+  }
+  .register-container {
+    height: 100vh;
+    width: 300px;
+    margin: 30% 10%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 630px){
+    .first-page-register {
+      /* display : grid;
+      grid-template-rows: 1fr 2fr; */
+      display: block;
+      height: 100vh;
+      width: 100%;
+    }
+  }

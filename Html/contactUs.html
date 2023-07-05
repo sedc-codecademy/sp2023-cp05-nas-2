@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/myLoginStyle.css" />
+  </head>
+  <body>
+    <button class="btn" type="button" style="visibility: hidden">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+
+    <form action="#">
+      <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" id="mail" required autocomplete="email" />
+        <label for="">Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"
+          ><ion-icon id="passIcon" name="lock-closed"></ion-icon
+        ></span>
+        <input
+          type="password"
+          id="pass"
+          required
+          autocomplete="current-password"
+        />
+        <input type="text" id="passTExt" required />
+        <label for="">Password</label>
+      </div>
+
+      <textarea style="width: 100%; height: 100%">Your messages</textarea>
+
+      <button type="submit" class="btn login">Submit</button>
+    </form>
+  </body>
+</html>
