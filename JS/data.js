@@ -1,4 +1,3 @@
-
   export let News = [
      {
        newsId: 0,
@@ -132,7 +131,7 @@
      {
        eventsId: 4,
        title: `Africa Automation Technology Fair`,
-       image: `https://www.alltechconferences.com/wp-content/uploads/2022/03/Africa-Automation-Technology-Fair.jpg`,
+       image: `https://biz-file.com/c/2205/656814-950x494.jpg`,
        Description: `The industry is constantly transforming, so are we. Positioned as the heartbeat of the industry in Africa, Africa Automation Fair has evolved and transformed to meet the needs of the industry and is now named the Africa Automation Technology Fair.`,
        URL: `https://www.alltechconferences.com/event/africa-automation-technology-fair/`,
        Date: `05-09-2023->05-11-2023`,
@@ -195,6 +194,7 @@
    ];
  
    export function cardTechCrunch(data) {
+    debugger
      return `
          <div class="post-box">
        <img id="data.newsId" onclick="fullboxCard(${data.newsId}) " src="${data.image}" class="post-img" alt="..." />
@@ -209,13 +209,13 @@
         </div>
          <div class="likes">
          <div class="likes-up">
-           <button onclick="likeCounterFn(${data.newsId})">
-             <i class="fa fa-thumbs-up"></i>
+         <button onclick="Likes(${data.newsId})">
+           <i class="fa fa-thumbs-up"></i>
            </button>
            <span id="likes_${data.newsId}">0</span>
          </div>
            <div class="likes-down">
-           <button onclick="unlikeCounterFn(${data.newsId})">
+           <button onclick="unlikesFn(${data.newsId})">
             <i class="fa fa-thumbs-down"></i>
            </button>
            <span id="unlikes_${data.newsId}">0</span>
@@ -226,31 +226,31 @@
      `;
    }
   
- export function cardEvents(data) {
+ export function cardEvents(event) {
      return `
           <div class="post-box">
-       <img id="data.eventsId" onclick="fullboxCard(${data.eventsId}) " src="${data.image}" class="post-img" alt="..." />
+       <img id="data.eventsId" onclick="fullboxCard(${event.eventsId}) " src="${event.image}" class="post-img" alt="..." />
        <div class="datas">
-         <a  href="fullBox.html" class="post-title"> ${data.title}</a>
-         <span class="post-date">${data.Date}</span>
+         <a  href="fullBox.html" class="post-title"> ${event.title}</a>
+         <span class="post-date">${event.Date}</span>
          <p class="post-description">
-         ${data.Description}
+         ${event.Description}
          </p>
          <div class="source-name">
            <span class="source-name">BBC</span>
         </div>
          <div class="likes">
          <div class="likes-up">
-           <button onclick="likeCounterFn(${data.eventsId})">
+           <button onclick="LikesEvents(${event.eventsId})">
              <i class="fa fa-thumbs-up"></i>
            </button>
-           <span id="likes_${data.eventsId}">0</span>
+           <span id="likesEvents_${event.eventsId}">0</span>
          </div>
            <div class="likes-down">
-           <button onclick="unlikeCounterFn(${data.eventsId})">
+           <button onclick="unlikesFnEvents(${event.eventsId})">
              <i class="fa fa-thumbs-down"></i>
            </button>
-           <span id="unlikes_${data.eventsId}">0</span>
+           <span id="unlikesEvents_${event.eventsId}">0</span>
          </div>
        </div>
        </div>
@@ -258,6 +258,62 @@
      `;
    }
   
+
+    window.likeCounter = {};
+     window.Likes = function likeCounterFn(id) {
+      console.log('news', likeCounter);
+     if (!likeCounter[id]) {
+      likeCounter[id] = 0;
+    }
+    likeCounter[id]++;
+    let likes = document.getElementById(`likes_${id}`);
+    likes.innerText = likeCounter[id];
+    return likeCounter[id];
+   }
+  window.unlikeCounter = {}; 
+window.unlikesFn = function unlikeCounterFn(id) {
+  console.log('news', unlikeCounter);
+   if (!unlikeCounter[id]) {
+     unlikeCounter[id] = 0;
+   }
+   unlikeCounter[id]++;
+  let unlikes = document.getElementById(`unlikes_${id}`);
+   unlikes.innerText = unlikeCounter[id];
+   return unlikeCounter[id];
+ }
+
+
+
+
+
+ 
+ 
+ window.likeCounterEvents = {};
+ window.LikesEvents = function likeCounterFnEvents(eventsId) {
+  console.log('events', likeCounterEvents);
+ if (!likeCounterEvents[eventsId]) {
+  likeCounterEvents[eventsId] = 0;
+}
+likeCounterEvents[eventsId]++;
+let likes = document.getElementById(`likesEvents_${eventsId}`);
+likes.innerText = likeCounter[eventsId];
+console.log(likeCounterEvents[eventsId]);
+return likeCounterEvents[eventsId];
+}
+
+
+window.unlikeCounterEvents = {}; 
+window.unlikesFnEvents = function unlikeCounterFnEvents(eventsId) {
+  console.log('events', unlikeCounterEvents);
+if (!unlikeCounterEvents[eventsId]) {
+  unlikeCounterEvents[eventsId] = 0;
+}
+unlikeCounterEvents[eventsId]++;
+let unlikes = document.getElementById(`unlikesEvents_${eventsId}`);
+unlikes.innerText = unlikeCounterEvents[eventsId];
+return unlikeCounterEvents[eventsId];
+}
+
 
 
 

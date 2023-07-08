@@ -12,11 +12,13 @@ let checkRemember = document.getElementById("checkRemember");
 let loginMail = document.getElementById("mail");
 let passIcon = document.getElementById('passIcon');
 let pass = document.getElementById('pass');
-let passTExt = document.getElementById('passTExt');
-passTExt.style.display='none';
+// let passTExt = document.getElementById('passTExt');
+// passTExt.style.display='none';
 
 
-registerLink.addEventListener("click", () => {
+registerLink.addEventListener("click", function (e) {
+debugger
+  e.preventDefault();
   wrapper.classList.add("active");
 });
 loginLink.addEventListener("click", () => {
@@ -69,9 +71,10 @@ function clearInputs() {
 
 passIcon.addEventListener('click',($event)=>{
 $event.preventDefault($event);
-  pass.style.display = "none";
-  passTExt.style.display = "block";
-  passTExt.value = pass.value;
+  // pass.style.display = "none";
+  // passTExt.style.display = "block";
+  // passTExt.value = pass.value;
+  console.log('password', $event);
 });
 
 
