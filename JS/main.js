@@ -10,8 +10,7 @@ let EventsMobile = document.getElementById("EventsMobile");
 
 
 
-News.forEach((x) => { debugger 
-  console.log(cardTechCrunch(x));
+News.forEach((x) => { 
   containerTechCrunch.innerHTML += cardTechCrunch(x);  
 });
 

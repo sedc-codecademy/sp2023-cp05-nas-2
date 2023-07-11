@@ -194,12 +194,11 @@
    ];
  
    export function cardTechCrunch(data) {
-    debugger
      return `
          <div class="post-box">
        <img id="data.newsId" onclick="fullboxCard(${data.newsId}) " src="${data.image}" class="post-img" alt="..." />
        <div class="datas">
-         <a  href="fullBox.html" class="post-title"> ${data.title}</a>
+         <aside class="post-title"> ${data.title}</aside>
          <span class="post-date">${data.Date}</span>
          <p class="post-description">
         ${data.Description}
@@ -282,12 +281,6 @@ window.unlikesFn = function unlikeCounterFn(id) {
    return unlikeCounter[id];
  }
 
-
-
-
-
- 
- 
  window.likeCounterEvents = {};
  window.LikesEvents = function likeCounterFnEvents(eventsId) {
   console.log('events', likeCounterEvents);
