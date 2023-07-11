@@ -18,6 +18,7 @@ li
 .page-wrapper {
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
    
 }
 .navbar {
@@ -46,7 +47,7 @@ li
 .navbar .logo {
     font-family: 'Rubik Glitch', cursive;
   text-align: center;
- 
+ margin-left: 5%;
   font-size: 2rem;
   font-weight: 500;
  }
@@ -58,13 +59,13 @@ li
     display: flex;
     float: right;
     align-items: center;
-   margin-right: 10%;
-   justify-content: space-between;
+   margin-right: 15%;
+   
 }
 .menu .dropdown-item{
     font-size: 1.2rem;
     color: #1DD3B0;
-    margin-right: 10%;
+    margin-right: 15%;
   
 }
 .menu .dropdown-item:hover {
@@ -125,7 +126,7 @@ li
     display: flex;
     width: 65%;
    margin: 2%;
-    height: 50vh;
+    height: 60vh;
 }
 
 
@@ -134,7 +135,8 @@ li
    
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-   gap: 15px;
+   grid-template-rows: repeat(auto, 350px);
+   gap: 4%;
    justify-content: space-between;
    cursor: pointer;
    float: left;
@@ -221,15 +223,16 @@ li
     font-size: 0.9rem;
 }
 .sidebar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     flex-direction: column;
-    width: 30%;
-    height: 350px;
+    width: 22%;
+    height: 330px;
     position: sticky;
     right: 0;
-    margin: 15px 0;
-    background-color: gray;
-    justify-content: space-around;
+    margin-left: 4%;
+   align-self: center;
    
    
 }
@@ -248,7 +251,7 @@ li
     justify-self: center;
     float: right;
     font-style: italic;
-    background-color: lightgray;
+
     font-size: 1.1rem;
   }
 .full-post-container {
@@ -286,7 +289,7 @@ height: 32rem;
 }
 
  footer{
-  position: sticky;
+ 
   bottom: 0;
   left: 0;
  } 
@@ -307,16 +310,23 @@ height: 32rem;
 }
 .social-links 
  {
-  font-size: 1.4rem;
-  padding-left: 30%;
-  align-self: center;
+    display: flex;
+    flex-direction: column;
+ 
  
 }
-.social-links a{
-  color:#1DD3B0;
- margin-left: 2%;
+.links{
+    display: flex;
+    font-size: 1.4rem;
+   
+    align-self: center;
 }
-.social-links a:hover{
+.links a{
+    margin-left: 10%;
+  color:#1DD3B0;
+
+}
+.links a:hover{
   color:#FF9E00;
   transition: 0.5s;
 }
@@ -325,9 +335,87 @@ height: 32rem;
     font-size: 0.8rem;
     justify-self: center;
     margin: 0.5% 2%;
+    align-self: center;
      
 }
-@media screen and (max-width: 630px){
+.contact-menu{
+    background-image: url("../CSS/images/news-background.jpg");
+background-size: cover;
+background-position: center;
+position: relative;
+width: 100%;
+height:80vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  
+}
+
+    
+input[type="text"] {
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        margin: 3% 0;
+        box-sizing: border-box;
+        width: 100%;
+        width: 100%;
+    padding: 10px;
+    
+       
+}
+
+ textarea {
+        min-height: 8vh;
+        max-height: 10vh;
+        width: 100%;      
+        background-color: white;
+        color:black;
+        border: none;
+        border-radius: 8px;
+        resize: none;
+   }
+
+
+
+.button {
+
+      background-color:#1DD3B0;
+      color: black;
+      font-size: 1.2rem;
+      padding: 1% 14%; 
+      margin-top: 36px;
+      font-weight: 700;
+      border-radius: 8px;
+     margin-left: 18%;
+
+
+      &:hover {
+        transform: translateY(4px);
+        transition-duration: 0.4s;   
+        background-color: #FF9E00;
+              }
+      }
+ @media screen and (min-width: 700px) and (max-width:1050px){
+    .menu {
+       margin-right: 8%;
+       
+    }
+    .menu .dropdown-item{
+        margin-right: 5%;
+      
+    }
+ }
+@media screen and (max-width: 700px){
     .page-wrapper{
         display: block;
     }
