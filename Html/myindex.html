@@ -32,91 +32,106 @@
     />
     <link rel="stylesheet" type="text/css" href="../CSS/register.css" />
   </head>
-  <div>
-    <div class="page-wrapper">
-      <!-- section navbar -->
-      <div class="navbar">
-        <button class="btn" type="button" style="visibility: hidden">
-          <i class="fa fa-arrow-left"></i>
+  <body>
+    <!-- section navbar -->
+    <div class="navbar">
+      <!-- <button class="btn" type="button" style="visibility: hidden">
+        <i class="fa fa-arrow-left"></i>
+      </button> -->
+      <div class="logo">TECH NEWS</div>
+      <div class="dropdow">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa fa-bars"></i>
         </button>
-        <div class="logo">TECH NEWS</div>
-        <div class="dropdow">
-          <button class="btn" type="button"data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul
-            class="dropdown-menu position-absolute top-100 start-50 end-0 dropdown-menu-dark"
-          >
-            <li><a class="dropdown-item" href="#" id="TechCrunchMobile">Latest News</a></li>
-            <li><a class="dropdown-item" href="#"id="EventsMobile">Events</a></li>
-            <li><a class="dropdown-item" href="#" id="conctactUsMobile">Contact Us</a></li>
-            <li><a href="logOut.html"><button class="btnLogout">LogOut</button></a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <a class="dropdown-item" href="#" id="TechCrunch">Latest News</a>
-          <a class="dropdown-item" href="#" id="Events">Events</a>
-          <a class="dropdown-item" href="#" id="conctactUs">Contact Us</a>
-          <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
-        </div>
+        <ul
+          class="dropdown-menu position-absolute top-100 start-50 end-0 dropdown-menu-dark"
+        >
+          <li>
+            <a class="dropdown-item" href="#" id="TechCrunchMobile"
+              >Latest News</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="EventsMobile">Events</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="conctactUsMobile"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
+          </li>
+        </ul>
       </div>
-      <!-- section latest news -->
-      
+      <div class="menu">
+        <a class="dropdown-item" href="#" id="TechCrunch">Latest News</a>
+        <a class="dropdown-item" href="#" id="Events">Events</a>
+        <a class="dropdown-item" href="#" id="conctactUs">Contact Us</a>
+        <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
+      </div>
+    </div>
+    <!-- section latest news -->
+    <div class="page-wrapper">
       <div class="horizontal-line">
-          <p>Latest news</p>
-        </div>
+        <p>Latest news</p>
+      </div>
       <div class="main-page-latest-news">
         <div class="post-container">
-          <div class="post container" id="containerTechCrunch">
-          
-          </div>
-          </div>
-          <div class="sidebar">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque,
-              impedit eveniet et expedita sunt deleniti molestiae illo eum.
-              Vero?
-            </p>
-            <img src="../CSS/images/fb.jpg" id="commercial-img" alt="" />
-          </div>
+          <div class="post container" id="containerTechCrunch"></div>
         </div>
-     
-      
-   
-   <!-- ---------------events section -->
-    
+        <div class="sidebar">
+          <img
+            src="../CSS/images/advertizingImage1.jpg"
+            id="commercial-img"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- ---------------events section -->
+
       <div class="horizontal-line">
         <p>Events</p>
       </div>
       <div class="main-page-events">
-      <div class="post-container">
-        <div class="post container" id="eventsContainer"></div>
-      </div>
-      <div class="sidebar">
-        <p>
+        <div class="post-container">
+          <div class="post container" id="eventsContainer"></div>
+        </div>
+        <div class="sidebar">
+          <!-- <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A eaque,
           impedit eveniet et expedita sunt deleniti molestiae illo eum. Vero?
-        </p>
-        <img src="../CSS/images/robot.jpg" id="commercial-img" alt="" />
+        </p> -->
+          <img src="../CSS/images/kodakFilm.jpg" id="commercial-img" alt="" />
+        </div>
       </div>
     </div>
-
-  </div>
     <footer>
       <div class="foot">
         <div class="about-us">
-          <p>TECH NEWS is where tomorrow is realized.It is the essential source of informations and ideas that make sence of a world in constant transformation.</p>
+          <p>
+            TECH NEWS is where tomorrow is realized.It is the essential source
+            of informations and ideas that make sence of a world in constant
+            transformation.
+          </p>
         </div>
         <div class="social-links">
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-solid fa-envelope"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <div class="links">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
           <div class="p">
             <p>2023 Tech News. SEDC G2</p>
           </div>
         </div>
-        
       </div>
     </footer>
     <script
@@ -124,7 +139,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <!-- test -->
 
     <script src="JS/Like.js"></script>
     <script src="../JS/login.js"></script>
@@ -134,4 +148,3 @@
     <script src="../JS/fullBox.js"></script>
   </body>
 </html>
-  
