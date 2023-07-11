@@ -32,38 +32,54 @@
     />
     <link rel="stylesheet" type="text/css" href="../CSS/register.css" />
   </head>
-  <div>
-    <div class="page-wrapper">
-      <!-- section navbar -->
-      <div class="navbar">
-        <button class="btn" type="button" style="visibility: hidden">
-          <i class="fa fa-arrow-left"></i>
+  <body>
+    <!-- section navbar -->
+    <div class="navbar">
+      <!-- <button class="btn" type="button" style="visibility: hidden">
+        <i class="fa fa-arrow-left"></i>
+      </button> -->
+      <div class="logo">TECH NEWS</div>
+      <div class="dropdow">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa fa-bars"></i>
         </button>
-        <div class="logo">TECH NEWS</div>
-        <div class="dropdow">
-          <button class="btn" type="button"data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul
-            class="dropdown-menu position-absolute top-100 start-50 end-0 dropdown-menu-dark"
-          >
-            <li><a class="dropdown-item" href="#" id="TechCrunchMobile">Latest News</a></li>
-            <li><a class="dropdown-item" href="#" id="OldNews">Old News</a></li>
-            <li><a class="dropdown-item" href="#"id="EventsMobile">Events</a></li>
-            <li><a class="dropdown-item" href="#" id="conctactUsMobile">Contact Us</a></li>
-            <li><a href="logOut.html"><button class="btnLogout">LogOut</button></a></li>
-          </ul>
-        </div>
-        <div class="menu">
-          <a class="dropdown-item" href="#" id="TechCrunch">Latest News</a>
-          <a class="dropdown-item" href="#" id="OldNews">Old News</a>
-          <a class="dropdown-item" href="#" id="Events">Events</a>
-          <a class="dropdown-item" href="#" id="conctactUs">Contact Us</a>
-          <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
-        </div>
+        <ul
+          class="dropdown-menu position-absolute top-100 start-50 end-0 dropdown-menu-dark"
+        >
+          <li>
+            <a class="dropdown-item" href="#" id="TechCrunchMobile"
+              >Latest News</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="EventsMobile">Events</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="conctactUsMobile"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
+          </li>
+        </ul>
       </div>
-      <!-- section latest news -->
-      
+      <div class="menu">
+        <a class="dropdown-item" href="#" id="TechCrunch">Latest News</a>
+        <a class="dropdown-item" href="#" id="Events">Events</a>
+        <a class="dropdown-item" href="./contactUs.html" id="conctactUs"
+          >Contact Us</a
+        >
+        <a href="index.html"><button class="btnLogout">Close</button></a>
+      </div>
+    </div>
+    <!-- section latest news -->
+    <div class="page-wrapper latest hidden">
       <div class="horizontal-line">
         <p>Latest news</p>
       </div>
@@ -79,9 +95,9 @@
           />
         </div>
       </div>
-
-      <!-- ---------------events section -->
-
+    </div>
+    <!-- ---------------events section -->
+    <div class="page-wrapper events">
       <div class="horizontal-line">
         <p>Events</p>
       </div>
@@ -98,6 +114,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <div class="foot">
         <div class="about-us">
@@ -125,13 +142,13 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <!-- test -->
 
-    <script src="JS/Like.js"></script>
+    <!-- <script src="JS/Like.js"></script>
     <script src="../JS/login.js"></script>
     <script src="../JS/contactUs.js"></script>
-    <script src="../JS/OldNews.js"></script>
-    <script src="../JS/main.js"></script>
+    <script src="../JS/OldNews.js"></script> -->
+    <script type="module" src="../JS/main.js"></script>
+    <script type="module" src="../JS/data.js"></script>
     <script src="../JS/fullBox.js"></script>
   </body>
 </html>

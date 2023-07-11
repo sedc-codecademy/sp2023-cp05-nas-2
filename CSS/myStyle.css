@@ -14,6 +14,10 @@ li
  {
     text-decoration: none;
 }
+.logo a {
+    text-decoration: none;
+    color:#1DD3B0;
+}
 
 .page-wrapper {
     display: flex;
@@ -200,6 +204,7 @@ li
 }
 .likes {
     display: flex;
+    align-items: center;
 }
 .likes-up {
     display: flex;
@@ -213,6 +218,13 @@ li
     border: none;
     outline: none;
     margin-right: 2%;
+}
+.likes input {
+    border: none;
+    outline: none;
+    margin-right: 2%;
+    width: 10px;
+    text-align: center;
 }
 .fa-thumbs-up {
     color: #1DD3B0;
@@ -286,6 +298,62 @@ height: 32rem;
 .full-post-description {
   font-size: 0.9rem;
   margin:  5px 0 10px;
+}
+.comments {
+max-width: 640px;
+margin: 30px 0;
+background: #fff;
+border-radius: 8px;
+padding: 20px;
+}
+.comments {
+	display: block;
+	transition: all 1s;
+}
+.comments textarea {
+    border-bottom: 2px solid;
+}
+.comments-buttons {
+    display:flex;
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px;
+    float: right;
+  
+   
+}
+
+#cancelComment{
+    width: 100%;
+    padding: 10px;
+    background-color: #1DD3B0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#cancelComment:hover {
+    background-color:#FF9E00;
+    transition: 0.5s;
+}
+#addComment{
+    margin-left: 2%;
+    width: 100%;
+    padding: 10px;
+    background-color: #1DD3B0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#addComment:hover{
+    background-color:#FF9E00;
+    transition: 0.5s;
+
+}
+.allUserComments {
+    display: block;
+    width: 650px;
+    height: auto;
 }
 
  footer{

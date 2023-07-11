@@ -32,70 +32,110 @@
     />
     <link rel="stylesheet" type="text/css" href="../CSS/register.css" />
   </head>
-<body>
-    <div class="page-wrapper">
-        <div class="navbar">
-            <button class="btn" type="button" style="visibility: visible">
-              <i class="fa fa-arrow-left"></i>
-            </button>
-            <div class="logo">TECH NEWS</div>
-            <div class="dropdow">
-              <button
-                class="btn"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa fa-bars"></i>
-              </button>
-              <ul
-                class="dropdown-menu position-absolute top-100 start-50 end-0 dropdown-menu-dark"
-              >
-                <li><a class="dropdown-item" href="#">TechCrunch+</a></li>
-                <li><a class="dropdown-item" href="#">Events</a></li>
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                <li><button class="btnLogout">LogOut</button></li>
-              </ul>
-            </div>
-            <div class="menu">
-              <a class="dropdown-item" href="#" id="TechCrunch">TechCrunch+</a>
-              <a class="dropdown-item" href="#" id="Events">Events</a>
-              <a class="dropdown-item" href="#">Contact Us</a>
-              <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
-            </div>
-            <div class="full-post-container">
-                <!-- <div class="full-post container" id="containerTechCrunch">
-                <div class="full-post-box">
-                  <img src="../CSS/images/programming.jpg" class="post-img" alt="..." />
-                  <div class="full-datas">
-                    <a href="#" class="full-post-title"> Title</a>
-                    <span class="post-date">12-may-2023</span>
-                    <p class="full-post-description">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sunt, aliquid, ea perferendis illum fuga quod minima inventore aperiam, harum ipsum voluptate? A, amet! Aliquam amet praesentium quas ipsam vero repellendus consequatur cumque dignissimos rerum, hic unde sequi sunt dolorem, assumenda quo ad minima eveniet repudiandae ex eos! Sequi laudantium ratione enim laborum repellat, cum distinctio ipsa ex, ab quo dolore, quisquam reprehenderit? Nesciunt, perferendis odit sed sunt ab, reiciendis officia modi reprehenderit fuga quo tempore vero quod necessitatibus. Nihil maiores eligendi velit impedit itaque sit iure aperiam adipisci harum officiis, illo sint voluptatibus ut animi aspernatur necessitatibus iste quod id optio non similique quibusdam, officia magnam consequuntur? Quasi officia magni repellat ratione quibusdam assumenda nesciunt expedita libero inventore alias mollitia nisi excepturi illo officiis voluptatibus quaerat ipsa voluptatum, rem ullam laborum? Dolorum, ea atque doloremque explicabo dicta sequi unde voluptates beatae incidunt eius asperiores dolor quia quis. Vero, voluptatibus?
-                    </p>
-                    <div class="source-name">
-                      <span class="source-name">BBC</span>
-                    </div>
-                    <div class="likes">
-                    <div class="likes-up">
-                      <button onclick="likeCounterFn">
-                        <i class="fa fa-thumbs-up"></i>
-                      </button>
-                      <span id="likes">0</span>
-                    </div>
-                      <div class="likes-down">
-                      <button onclick="unlikeCounterFn">
-                        <i class="fa fa-thumbs-down"></i>
-                      </button>
-                      <span id="unlikes">0</span>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                </div> -->
-                </div>
+  <body>
+    <div class="navbar">
+      <!-- <button class="btn" type="button" style="visibility: hidden">
+        <i class="fa fa-arrow-left"></i>
+      </button> -->
+      <div class="logo">TECH NEWS</div>
+      <div class="dropdow">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <ul
+          class="dropdown-menu position-absolute top-100 start-50 end-0 dropdown-menu-dark"
+        >
+          <li>
+            <a class="dropdown-item" href="#" id="TechCrunchMobile"
+              >Latest News</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="EventsMobile">Events</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="conctactUsMobile"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu">
+        <a class="dropdown-item" href="#" id="TechCrunch">Latest News</a>
+        <a class="dropdown-item" href="#" id="Events">Events</a>
+        <a class="dropdown-item" href="#" id="conctactUs">Contact Us</a>
+        <a href="logOut.html"><button class="btnLogout">LogOut</button></a>
+      </div>
     </div>
-    <script src="../JS/main.js"></script>
+    <div class="page-wrapper">
+      <div class="full-post-container">
+        <div class="full-post container" id="containerTechCrunch">
+          <div class="full-post-box">
+            <img
+              src="../CSS/images/programming.jpg"
+              class="post-img"
+              alt="..."
+            />
+            <div class="full-datas">
+              <a href="#" class="full-post-title"> Title</a>
+              <span class="post-date">12-may-2023</span>
+              <p class="full-post-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                sunt, aliquid, ea perferendis illum fuga quod minima inventore
+                aperiam, harum ipsum voluptate? A, amet!
+              </p>
+              <div class="source-name">
+                <span class="source-name">BBC</span>
+              </div>
+              <div class="likes">
+                <div class="likes-up">
+                  <button onclick="likeCounterFn">
+                    <i class="fa fa-thumbs-up"></i>
+                  </button>
+                  <span id="likes">0</span>
+                </div>
+                <div class="likes-down">
+                  <button onclick="unlikeCounterFn">
+                    <i class="fa fa-thumbs-down"></i>
+                  </button>
+                  <span id="unlikes">0</span>
+                </div>
+              </div>
+              <div class="comments">
+                <label for="comments">Comments</label>
+                <textarea
+                  type="text"
+                  name="userComments"
+                  id="userComments"
+                  placeholder="Write a comment"
+                  v-model="newItem"
+                  @keyup.enter="addItem()"
+                ></textarea>
+                <div class="comments-buttons">
+                  <button v-on:click="addItem()" id="cancelComment">
+                    Cancel
+                  </button>
+                  <button v-on:click="addItem()" id="addComment">
+                    Comment
+                  </button>
+                </div>
+              </div>
+              <div class="allUserComments"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../JS/main.js"></script>
 
- </body>
+    <script src="../JS/fullBox.js"></script>
+  </body>
 </html>
